@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load bootstrap3 %}
+{% load static %}
+
+{% block title %}
+HOME
+{% endblock%}
+
+{% block body %}
+
+<div class="main_body">
+    <h1>Let go into the cloud</h1>
+    <p>This website stores your personal data in our cloud database. You can add images,songs,video etc.</p>
+</div>
+  <a class="buta" href="{% url 'account:login' %}" style="margin-left: 46%"><input type="button" name="Explore" value="Welcome" ></a>
+
+{% endblock%}
+

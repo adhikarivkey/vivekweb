@@ -1,0 +1,137 @@
+.main{
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+    background-position:center;
+    background-size: cover;
+    position: absolute;
+    background-repeat:repeat;
+    background-attachment:fixed;
+    overflow:scroll;
+}
+.link{
+    color: #fff;
+}
+
+.link:hover
+{
+    color: black;
+}
+
+#link:hover
+{
+    color: black;
+}
+
+
+.signbox{
+    width: 320px;
+    height: 470px;
+    background: transparent;
+    font-family: 'Titillium Web', sans-serif;
+    color: #fff;
+    top: 50%;
+    margin-top: 35px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    text-align: center;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+}
+h2{
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  color: #14d5db;
+  font-size: 18px;
+}
+
+h2:hover
+{
+    color: white;
+    cursor: pointer;
+}
+
+.signbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 90%;
+    background: #fb2525;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.signbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #32a883;
+    color: black;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+
+}
+
+
+.formbox input[type="text"], input[type="password"], input[type="email"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    color: black;
+    font-size: 16px;
+}
+
+.formbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: black;
+}
+
+.formbox a:hover
+{
+    color: #ffc107;
+}
+.signbox a{
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
+    color: red;
+}
+
+.signbox a:hover
+{
+    color: #32a883;
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}

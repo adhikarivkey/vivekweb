@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% load bootstrap3 %}
+{% load static %}
+
+{% block title %}
+PICTURE
+{% endblock%}
+
+{% block body %}
+	
+	<div class="row" style="color: white; margin-top: 25px">
+		<div class="container">
+
+			{{detail.title}}<a  href="{% url 'user_data:edit'  detail.id %}"><p style="color:red" >edit</p></a>
+			<a  href="{% url 'user_data:delete'  detail.id %}"><p style="color:red" >delete</p></a><p></p><p></p>
+			{{detail.description}}<p>IMAGES</p>
+			{% for i in detail.multipleimg_set.all %}
+				<img src="{{ i.picture.url }}" alt="Avatar" style="width: 33%; height: 30%">
+			{% endfor %}
+		</div>
+	</div>
+    
+        
+        
+
+{% endblock%}
+

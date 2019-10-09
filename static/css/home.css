@@ -1,0 +1,48 @@
+.main_body {
+    background-color: transparent;
+    width: 100%;
+    height: 260px;
+    padding: 50px;
+    margin: 0 auto;
+    color: #fff;
+
+}
+
+hr{
+	width: 80%;
+	height: 4px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.main_body h1{
+	font-family: "Palationo Linotype","Book Antiqua",Palationo,serif;
+	font-size: 100px;
+	font-weight: lighter;
+}
+.main_body h1:hover
+{
+    color: #11f0dd;
+}
+.main_body p{
+	font-size: 25px;
+	font-weight: lighter;
+	text-align: center;
+}
+
+.buta input[type="button"]
+{
+    border: 1px solid black;
+    height: 40px;
+    width: 120px;
+    background: transparent;
+    color: #11f0dd;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.buta input[type="button"]:hover{
+    color: #ffffff;
+    background: linear-gradient(to left,#2193b0, #6dd5ed);
+}
+

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load bootstrap3 %}
+{% load static %}
+
+{% bootstrap_messages %}
+{% block title %}
+
+Sign Up
+{% endblock %}
+
+
+{% block body %}
+    <div class="signbox">
+        <img src="{% static 'images/log.png' %}" class="avatar" >
+
+            <h1>Sign Up for Free</h1>
+      	
+      	
+      		<!-- <div>
+      			<h3>Sign Up</h3>
+      			<h3>Log In</h3>
+      		</div> -->
+            <form class="formbox" method="POST">
+                {% csrf_token %}
+                {% bootstrap_form form layout='inline' %}
+                <input type="submit" name="" value="Sign Up">
+                <h7 style="font-size:12px">Already have an account </h7><a href="{% url 'account:login' %}">Sign In</a><h7 style="font-size:12px"> here</h7>
+            </form>
+        </div>
+    
+
+
+{% endblock %}

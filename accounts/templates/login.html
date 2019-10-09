@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% load bootstrap3 %}
+{% load static %}
+{% load socialaccount %}
+{% providers_media_js %}
+
+{% block title %}
+Login
+{% endblock %}
+
+{% block body %}
+    <div class="signbox">
+    	<img src="{% static 'images/log.png' %}" class="avatar" >
+
+        <h1>Welcome Back!</h1>
+        <form class="formbox" method="POST">
+	        {% csrf_token %}
+	        {% for error in  bootstrap_form.error %}
+	        	<p style="color: red">{{ error }}</p>
+	        {% endfor %}
+	        {% bootstrap_form form  layout='inline' %}
+	        <input type="submit" value="Login">
+	        <a class="nav-link p-2" href="{% provider_login_url "google" %}">
+	        	<h2>Login With Google</h2>
+	        </a>
+
+	        <a href="{% url 'account:password_reset' %}">Forgot Password!</a><br>
+            <h7 style="font-size:12px">Don't have an account </h7><a href="{% url 'account:signup' %}">Sign Up</a><h7 style="font-size:12px"> here</h7>
+        </form>
+    </div>
+
+{% endblock %}
+
+
